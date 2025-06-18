@@ -1,6 +1,6 @@
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
-  background: #212136;
+  background: #24244a;
   color: #f4f4f4;
   margin: 0;
   padding: 0 0 2rem 0;
@@ -38,12 +38,12 @@ h1 {
   border-radius: 1rem;
   box-shadow: 0 4px 16px #0005;
   padding: 1.2rem 1rem 2rem 1rem;
-  min-width: 210px;
+  min-width: 220px;
   text-align: center;
 }
 .scene {
   margin-top: 1.2rem;
-  min-height: 110px;
+  min-height: 180px;
 }
 .item {
   margin: 0.6rem auto;
@@ -53,9 +53,12 @@ h1 {
   cursor: pointer;
   transition: background 0.15s;
   user-select: none;
-  font-size: 1.13rem;
+  font-size: 1.12rem;
   width: fit-content;
   min-width: 90px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
 .item:hover {
   background: #6684ff44;
@@ -65,7 +68,7 @@ h1 {
 }
 #echoes {
   margin: 1.5rem auto 0 auto;
-  max-width: 600px;
+  max-width: 640px;
   background: #232325;
   border-radius: 0.7rem;
   padding: 1rem 1.3rem 1.5rem 1.3rem;
@@ -78,4 +81,22 @@ h1 {
   font-family: 'Fira Mono', 'Consolas', monospace;
   white-space: pre-line;
   font-size: 1.04rem;
+}
+#ending {
+  margin: 2rem auto 0 auto;
+  max-width: 600px;
+  background: #2a2a50;
+  border-radius: 0.8rem;
+  padding: 1.5rem;
+  box-shadow: 0 2px 12px #0005;
+  font-size: 1.2rem;
+  color: #fff4c6;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.ending-title {
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin-bottom: 0.9rem;
+  color: #ffe15a;
 }
