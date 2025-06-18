@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Echoes of the Future - Static Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Echoes of the Future</h1>
+  <div id="game">
+    <div class="time-node" id="past">
+      <h2>Past</h2>
+      <div class="scene">
+        <div id="seed" class="item" onclick="plantSeed()">🌱 Seed (click to plant)</div>
+        <div id="past-tree" class="item hidden">🌳 Tree</div>
+      </div>
+    </div>
+    <div class="time-node" id="present">
+      <h2>Present</h2>
+      <div class="scene">
+        <div id="present-tree" class="item hidden">🌳 Tree (grown!)</div>
+        <div id="present-stump" class="item hidden" onclick="cutTree()">🪓 Stump (click to cut)</div>
+        <div id="present-log" class="item hidden">🪵 Log</div>
+      </div>
+    </div>
+    <div class="time-node" id="future">
+      <h2>Future</h2>
+      <div class="scene">
+        <div id="future-stump" class="item hidden">🪓 Stump (from past cut)</div>
+        <div id="future-tree" class="item hidden">🌳 Tree (untouched)</div>
+        <div id="future-house" class="item hidden">🏠 Wooden House (built from logs)</div>
+      </div>
+    </div>
+  </div>
+  <div id="echoes">
+    <h3>Echoes</h3>
+    <div id="echo-log"></div>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>
