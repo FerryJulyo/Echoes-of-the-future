@@ -1,6 +1,6 @@
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
-  background: #222;
+  background: #212136;
   color: #f4f4f4;
   margin: 0;
   padding: 0 0 2rem 0;
@@ -11,23 +11,39 @@ h1 {
   margin: 1.5rem 0 0.5rem 0;
   letter-spacing: 2px;
 }
+#resetBtn {
+  display: block;
+  margin: 0 auto 1rem auto;
+  background: #4464cc;
+  color: #fff;
+  border: none;
+  border-radius: 0.6rem;
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+#resetBtn:hover {
+  background: #223399;
+}
 #game {
   display: flex;
   justify-content: center;
   gap: 2rem;
   margin: 2rem 0;
+  flex-wrap: wrap;
 }
 .time-node {
   background: #333a;
   border-radius: 1rem;
   box-shadow: 0 4px 16px #0005;
   padding: 1.2rem 1rem 2rem 1rem;
-  min-width: 190px;
+  min-width: 210px;
   text-align: center;
 }
 .scene {
   margin-top: 1.2rem;
-  min-height: 72px;
+  min-height: 110px;
 }
 .item {
   margin: 0.6rem auto;
@@ -37,9 +53,9 @@ h1 {
   cursor: pointer;
   transition: background 0.15s;
   user-select: none;
-  font-size: 1.2rem;
+  font-size: 1.13rem;
   width: fit-content;
-  min-width: 70px;
+  min-width: 90px;
 }
 .item:hover {
   background: #6684ff44;
@@ -57,8 +73,9 @@ h1 {
 }
 #echo-log {
   margin-top: 0.5rem;
-  min-height: 2.5em;
+  min-height: 3em;
   color: #b2e2ff;
   font-family: 'Fira Mono', 'Consolas', monospace;
   white-space: pre-line;
+  font-size: 1.04rem;
 }
