@@ -2,7 +2,7 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <title>Echoes of the Future - Complex Version</title>
+  <title>Echoes of the Future - Ultimate Puzzle Edition</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -12,41 +12,22 @@
   <div id="game">
     <div class="time-node" id="past">
       <h2>Masa Lalu</h2>
-      <div class="scene">
-        <div id="seed" class="item" onclick="plantSeed()">🌱 Benih Pohon (klik untuk tanam)</div>
-        <div id="flowerSeed" class="item" onclick="plantFlower()">🌸 Benih Bunga (klik untuk tanam)</div>
-        <div id="digSpot" class="item" onclick="digKey()">🕳️ Tanah Longgar (klik untuk menggali)</div>
-        <div id="keyFound" class="item hidden">🔑 Kunci Ditemukan!</div>
-        <div id="past-tree" class="item hidden">🌳 Pohon Tumbuh</div>
-        <div id="past-flower" class="item hidden">🌸 Bunga Mekar</div>
-      </div>
+      <div class="scene" id="scene-past"></div>
     </div>
     <div class="time-node" id="present">
       <h2>Masa Kini</h2>
-      <div class="scene">
-        <div id="present-tree" class="item hidden">🌳 Pohon (bisa ditebang)</div>
-        <div id="present-stump" class="item hidden" onclick="cutTree()">🪓 Tunggul (klik untuk tebang pohon)</div>
-        <div id="present-log" class="item hidden" onclick="buildHouse()">🪵 Kayu (klik untuk membangun rumah)</div>
-        <div id="present-flower" class="item hidden">🌸 Bunga</div>
-        <div id="present-key" class="item hidden">🔑 Kunci (bisa dipakai di masa depan)</div>
-      </div>
+      <div class="scene" id="scene-present"></div>
     </div>
     <div class="time-node" id="future">
       <h2>Masa Depan</h2>
-      <div class="scene">
-        <div id="future-stump" class="item hidden">🪓 Tunggul Masa Depan</div>
-        <div id="future-tree" class="item hidden">🌳 Pohon Utuh</div>
-        <div id="future-house" class="item hidden">🏠 Rumah Kayu</div>
-        <div id="future-flower" class="item hidden">🌸 Bunga Abadi</div>
-        <div id="future-chest-locked" class="item hidden" onclick="openChest()">🗝️ Peti Misterius (terkunci - klik jika punya kunci)</div>
-        <div id="future-chest-opened" class="item hidden">🎁 Peti Terbuka: Anda menemukan artefak masa depan!</div>
-      </div>
+      <div class="scene" id="scene-future"></div>
     </div>
   </div>
   <div id="echoes">
     <h3>Catatan Echoes</h3>
     <div id="echo-log"></div>
   </div>
+  <div id="ending" class="hidden"></div>
   <script src="game.js"></script>
 </body>
 </html>
